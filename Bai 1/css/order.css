@@ -1,5 +1,5 @@
 #main{
-    background-image:url(f45.jpg);
+    background-image:url(../img/opportunity/bg_term.png);
             background-attachment:fixed;
             background-size: 100% 100%;
             margin: 0 auto !important;
@@ -61,7 +61,7 @@ display: flex;
     font-size: 14px;
     font-weight: bold;
     font-family: Verdana;
-    background-image:url(img/border/order.bg-title.png);
+    background-image:url(img/order/order.bg-title.png);
     background-repeat: repeat-x;
     height: 40px;
     display: flex;
@@ -163,7 +163,7 @@ font-size: 12px;
 font-weight: bold;
 }
 .footer-mini-cart .btn-order{
-    background-image: url(img/order/btn-order.png);
+    background-image: url(img/order/.btn-order.png);
     background-repeat: repeat-x;
     border-radius:  5px 5px 5px 5px;
     width: 235px;
