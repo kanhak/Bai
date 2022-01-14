@@ -1,526 +1,278 @@
-<!DOCTYPE html >
-<html  lang = " en " >
-<đầu >
-    <meta  charset = " UTF-8 " >
-    <meta  http-equiv = " X-UA-Tương thích " content = " IE = edge " >
-    <meta  name = " viewport " content = " width = device-width, initial-scale = 1.0 " >
-    <title > Menu </title >
-    <link  rel = " stylesheet " href = " css / header.css " >
-    <link  rel = " stylesheet " href = " footer.css " >
-    <link  rel = " stylesheet " href = " menu.css " >
-    <link  rel = " stylesheet " href = " https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css " >
-    <style >
-nút : di chuột{
-  độ mờ :  0,8 ;}
-. hủy bỏ {
-  chiều rộng : tự động;
-  đệm :  10 px  18 px ;
-  màu nền :  # f44336 ;
-}
-. imgcontainer {
-  text-align : center;
-  lề :  24 px  0  12 px  0 ;
-  chức vụ : thân nhân;
-}
-. thùng chứa {
-  đệm :  16 px ;
-}
-khoảng thời gian . psw {
-  float : phải;
-  padding-top :  16 px ;
-}
-. phương thức {
-  hiển thị : không có;
-  vị trí : cố định;
-  chiều rộng :  100 % ;
-  chiều cao :  100 % ;
-  tràn : tự động;
-  background-color :  rgb ( 0 , 0 , 0 );
-  background-color :  rgba ( 0 , 0 , 0 , 0.4 );
-}
-. phương thức-nội dung {
-    background-color :  rgba ( 255 ,  255 ,  255 ,  0.8 );
-  ký quỹ :  5 % tự động 15 % tự động;
-  viền :  1 px solid # 888 ;
-  chiều rộng :  80 % ;
-}
-. đóng cửa {
-  vị trí : tuyệt đối;
-  bên phải :  25 px ;
-  đầu :  0 ;
-  màu :  # 000 ;
-  kích thước phông chữ :  35 px ;
-  font-weight : bold;
-}
-. đóng : di chuột ,
-. đóng : tiêu điểm {
-  màu sắc : đỏ;
-  con trỏ : con trỏ;
-}
-. làm động {
-  -webkit-animation : animatezoom 0,6 giây ;
-  hoạt ảnh : animatezoom 0,6 giây
-}
-@keyframes animatezoom {
-  từ { biến đổi :  quy mô ( 0 )}
-  thành { biến đổi :  quy mô ( 1 )}
-}
-@ -webkit-keyframes animatezoom {
-  từ { -webkit-biến đổi :  scale ( 0 )}
-  thành { -webkit-biến đổi :  scale ( 1 )}
-}
-@media screen and ( max-width :  300 px ) {
-  khoảng thời gian . psw {
-     hiển thị : khối;
-     float : không có;
-  }
-  . hủy bỏ {
-     chiều rộng :  100 % ;
-  }
-}
-    </style >
-</head >
-<body >
-    <div  id = " id01 " class = " modal " >
-  
-        <form  class = " modal-content animate " action = " /action_page.php " method = " post " >
-          <div  class = " imgcontainer " >
-            <span  onclick = " document.getElementById ('id01'). style.display = 'none' " class = " close " title = " Đóng phương thức " > & times; </span >            
-          </div >
-      
-          <div  class = " container " >
-            <label  for = " uname " > <b > Đăng nhập tên </b > </label >
-            <input  type = " text " placeholder = " Nhập đăng nhập tên " name = " uname " bắt buộc >
-      
-            <label  for = " psw " > <b > Password </b > </label >
-            <input  type = " password " placeholder = " Nhập mật khẩu " name = " psw " bắt buộc >              
-            <button  type = " submit " > Đăng nhập </button >
-            <nhãn >
-              <input  type = " checkbox " check = " check " name = " nhớ " > Nhớ thông tin của tôi
-            </label >
-          </div >      
-          <div  class = " container " style = " background-color: rgba (255, 255, 255, 0.8); " >
-            <button  type = " button " onclick = " document.getElementById ('id01'). style.display = 'none' " class = " hủybtn " > Hủy </button >
-            <Khoảng  lớp = " psw " > Quên <một  href =" # " > mật khẩu? </a > </span >
-          </div >
-        </form >
-      </div >      
-      <script >
-      var  modal  =  tài liệu . getElementById ( 'id01' ) ;
-      cửa sổ . onclick  =  function ( event )  {
-          if  ( event . target  ==  modal )  {
-              phương thức . phong cách . display  =  "none" ;
-          }
-      }
-      </script >
-      <div  id = " id02 " class = " modal " >  
-        <form  class = " modal-content animate " action = " /action_page.php " method = " post " >
-          <div  class = " imgcontainer " >
-            <span  onclick = " document.getElementById ('id02'). style.display = 'none' " class = " close " title = " Đóng phương thức " > & times; </span >            
-          </div >      
-          <div  class = " container " >
-            <label  for = " uname " > <b > Tên đăng kí </b > </label >
-            <input  type = " text " placeholder = " Nhập tên cần đăng ký " name = " uname " bắt buộc >
-      
-            <label  for = " psw " > <b > Mật khẩu đăng ký </b > </label >
-            <input  type = " password " placeholder = " Nhập mật khẩu cần đăng ký " tên = " psw " bắt buộc >              
-            <button  type = " submit " > Đăng kí! </nút >
-            <nhãn >
-              <input  type = " checkbox " check = " check " name = " nhớ " > Kiểm tra
-            </label >
-          </div >    
-         </form >
-      </div >
-      <script >
-      var  modal  =  tài liệu . getElementById ( 'id02' ) ;
-      cửa sổ . onclick  =  function ( event )  {
-          if  ( event . target  ==  modal )  {
-              phương thức . phong cách . display  =  "none" ;
-          }
-      }
-      </script >
-    <section  id = " header " >
-        <div  id = " logo " >
-            <Một  href = " # " > <img  src =" img / header / logo.png " alt ="" > </một >
-        </div >
-         <div  class = " header-top " >
-            <div  id = " searchform " class = " clearfix " >
-                <div  class = " item " id = " register " >
-                    <Một  onclick = " document.getElementById ( 'id01'). Style.display = 'khối' "   href =" # " > Đăng nhập </một >
-                    <Một  onclick = " document.getElementById ( 'id02') style.display = 'khối'. " Href =" # " > & ensp; Đăng ký </một >   
-                </div >
-                <div  class = " item " >
-                    <input  class = " search_textbox " type = " text " value = " Tìm kiếm " >
-                    <div  class = " search_button " >
-                        <Một  href = " # " > <img  src =" img / header / searchbtn.png " alt ="" > </một >
-                    </div >
-                </div >
-            </div >
-            <div  id = " menu " class = " clearfix " >
-                <ul >
-                    <Li > <một  href = " home.html " > Trang chủ </một > </li >
-                    <Li > <một  href = " Order.html " > Đặt hàng trực tuyến </một > </li >
-                    <Li > <một  lớp = " menu-active " href =" menu.html " > Thực đơn </một > </li >
-                    <Li > <một  href = " # " > Khuyến mãi </một > </li >
-                    <Li > <một  href = " header-footer.html " > Giới Thiệu </một > </li >
-                    <Li > <một  href = " # " > Liên hệ </một > </li >
-                    <Li > <một  href = " # " > Tuyển dụng </một > </li >
-                    <li  class = " cartimg " > <img  src = " img / header / cart.png " alt = "" > </li >
-                </ul >
-            </div >
-            <div  id = " flag " >
-                <Một  href = " # " > <img  src =" img / header / vi.png " alt =" VN " tiêu đề =" Việt " > </một >
-                <Một  href = " # " > <img  src =" img / header / uk.png " alt =" Anh " tiêu đề =" English " > </một >
-                <Một  href = " # " > <img  src =" img / header / kor.png " alt =" Kr " tiêu đề =" Hàn Quốc " > </một >
-                <Một  href = " # " > <img  src =" img / header / ja.png " alt =" Jp " tiêu đề =" Nhật Bản " > </một >
-            </div >
-        </div >
-    </phần >
-    <section  id = main >
-        <phần > 
-            <div  id = " body_content " >
-                <div  class = " col-left " >
-                    <h2  class = " title-menu " > Menu </h2 >
-                    <nav  id = " top-menu " >
-                        <ul >
-                            <Li > <một  href = " # " > Thực đơn khai vị </một > </li >
-                            <Li  class = " active " > <một  href =" # " > Thực main menu & ensp; & ensp; & ensp; & ensp; & ensp; & ensp; & ensp; & ensp; & ensp; & ensp; & ensp; & ensp; </a > </li >
-                            <Li > <một  href = " # " > Thực đơn tráng miệng <một > </li >
-                            <Li > <một  href = " # " > Thức uống & amp; rượu </a > </li >
-                        </ul >
-                    </nav >
-                </div >
-                <div  class = " col-right " >
-                    <div  id = " main-menu " >
-                        <div  class = " module " style = " padding-left: 10px; " >
-                            <div  class = " main-title " >
-                                <h3 > THỰC ĐƠN ÁP DỤNG CÁC NHÀ HÀNG </h3 >                                
-                            </div >
-                        </div >
-                        <div  class = " module " > 
-                            <div  class = " content-title " >
-                                <h3 > Starter </h3 >
-                            </div >
-                            <div  class = " sub-title " >
-                                <div  class = " sub " > Giá trị chưa bao gồm 10% thuế VAT </div >
-                            </div >
-                            <div  class = " content-content " >
-                                <div  class = " product " >
-                                    <h4 > SOUP TRONG NGÀY </h4 >
-                                    <div  class = " product-img " >
-                                        <img  src = " img / menu / alfhcm-soup-of-the-day.png " >
-                                    </div >
-                                    <p  class = " product-desc " > Xin hỏi nhân viên phục vụ về môn đặc biệt trong ngày </p >
-                                    <p  class = " price " > <span > 90.000đ </span > </p >
-                                </div >
-                                <div  class = " product " >                                    
-                                    <h4 > LOAF GARLIC CHEESE </h4 >
-                                    <div  class = " product-img " >
-                                    <img  src = " img / menu / alfhcm-Cheese-Garlic-Bread.png " >  
-                                   </div >                                  
-                                <p  class = " product-desc " > Bánh mì bơ đậu phộng phô mai nướng </p >
-                                <p  class = " price " > <span > 90.000đ </span > </p >
-                            </div >
-                            <div  class = " product " >                                
-                            </div >
-                            <div  class = " product " >                                
-                            </div >
-                        </div >
-                        <div  class = " module " >
-                            <div  class = " content-title " >
-                                <h3 > GẠO NƯỚNG CỦA AL </h3 >
-                            </div >
-                            <div  class = " sub-title " >
-                                <div  class = " sub " > Giá trên chưa bao gồm 10% Thuế VAT </div >
-                            </div >
-                            <div  class = " content-content " >
-                                <div  class = " product " >
-                                    <h4 > GẠO NẾP KẾT HỢP </h4 >
-                                    <div  class = " product-image " >
-                                        <img  src = " img / menu / alfhcm-merge-Fried-rice.png " >
-                                    </div >
-                                    <p  class = " product-desc " > Cơm chiên tổng hợp thịt bò, thịt bò, mực, jăm bông và rau củ </p >
-                                    <p  class = " price " > <span > 155.000đ </span > </p >
-                                </div >
-                                <div  class = " product " >
-                                    <h4 > GẠO LỨT HẢI SẢN </h4 >
-                                    <div  class = " product-image " >
-                                        <img  src = " img / menu / alfhcm-hải sản-chiên-cơm.png " >
-                                    </div >
-                                    <p  class = " product-desc " > Cơm chiên hải sản và rau củ </p >
-                                    <p  class = " price " > <span > 155.000đ </span > <p >
-                                </div >
-                            </div > 
-                        </div >
-                        <div  class = " module " > 
-                            <div  class = " content-title " >
-                                <h3 > PLATTERS </h3 >
-                            </div >
-                            <div  class = " sub-title " >
-                                <div  class = " sub " > Giá trên chưa bao gồm 10% Thuế VAT </div >
-                            </div >
-                            <div  class = " content-content " >
-                                <div  class = " product " >
-                                    <h4 > VẬT LÍ BẮT ĐẦU </h4 >
-                                    <div  class = " product-image " >
-                                        <img  src = " img / menu / alfhcm-Starter-Plater.png " >
-                                    </div >
-                                    <p  class = " product-desc " > Đĩa lớn gồm: nướng, khoai tây chiên, mực chiên bột, cánh gà nướng, hành tây chiên bột & amp; bánh bơ tỏi </p >
-                                    <p  class = " price " > <span > 425.000đ </span > </p >
-                                </div >
-                                <div  class = " product " >
-                                    <h4 > THỊT NGƯỜI YÊU MỘC </h4 >
-                                    <div  class = " product-image " >
-                                        <img  src = " img / menu / alfhcm-thịt-những người yêu thích-platter.png " >
-                                    </div >
-                                    <p  class = " product-desc " > Đĩa tổng hợp: Cánh gà nướng, xúc xích nướng, tôm nướng, 4 xiên nướng, bánh mì bơ đậu phô mai & amp; khoai tây chiên chiên giòn </p >
-                                    <p  class = " price " > <span > 445.000đ <span > </p >
-                                </div >
-                            </div > 
-                         </div >
-                        <div  class = " module " >
-                            <div  class = " content-title " >
-                                <h3 > SALADS </h3 >
-                            </div >
-                            <div  class = " sub-title " >
-                                <div  class = " sub " > Thêm lườn gà nướng cho Salad: 30.000đ </div >
-                                <div  class = " sub " > Giá trên chưa bao gổm 10% thuế VAT </div >
-                            </div >
-                            <div  class = " content-content " >
-                                <div  class = " product " >
-                                    <h4 > SALAD VƯỜN XANH </h4 >
-                                    <div  class = " product-image " >
-                                        <img  src = " img / menu / alfhcm-green-salad.png " >
-                                    </div >
-                                    <p  class = " product-desc " > Salad với cà chua, dưa leo, hành tây, sốt dầu đặc của Al Fresco's </p >
-                                    <p  class = " price " > <span > 110.000đ </span > </p >
-                                </div >
-                                <div  class = " product " >
-                                    <h4 > CAESAR SALAD </h4 >
-                                    <div  class = " product-image " >
-                                        <img  src = " img / menu / alfhcm-caesar-salad.png " >
-                                    <div >
-                                    <p  class = " product-desc " > Salad với xà lách thái nhỏ, bánh mì nướng, thịt ba chỉ xông khói, trứng gà, khoai tây chiên và phô mai Parmesan </p >
-                                    <p  class = " price " > <span > 155.000đ </span > </p >
-                                </div >
-                            </div > 
-                         </div >
-                         <div  class = " module " >
-                            <div  class = " content-title " >
-                                <h3 > Mì ống </h3 >
-                            </div >
-                            <div  class = " sub-title " >
-                                <div  class = " sub " > Chọn các loại sợi: Mỳ cáp, ống hoặc sợi sợi dài </div >
-                                <div  class = " sub " > Giá trên chưa bao gổm 10% thuế VAT </div >
-                            </div >
-                            <div  class = " content-content " >
-                                <div  class = " product " >
-                                    <h4 > SPAGHETTI VONGOLE </h4 >
-                                    <div  class = " product-image " >
-                                        <img  src = " img / menu / alfhcm-spa-vongole.png " >
-                                    </div >
-                                    <p  class = " product-desc " > Mỳ Ý sợi dài với nghêu, ngò tây, ớt bột, rượu vang trắng và dầu ôliu </p >
-                                    <p  class = " price " > <span > 185.000đ </span > </p >
-                                </div >
-                                <div  class = " product " >
-                                    <h4 > SPAGHETTI BOLOGNAISE </h4 >
-                                    <div  class = " product-image " >
-                                      <img  src = " img / menu / alfhcm-spa-bolo.png " >
-                                    </div >
-                                    <p  class = " product-desc " > Mỳ Ý sợi dài với xốt xương hầm & amp; cà chua. </p >
-                                    <p  class = " price " > <span > 195.000đ </span > </p >
-                                </div >
-                            </div > 
-                         </div >
-                         <div  class = " module " >
-                            <div  class = " content-title " >
-                                <h3 > LỰA CHỌN CỦA CHEF </h3 >
-                            </div >
-                            <div  class = " sub-title " >                                
-                                <div  class = " sub " > Giá trên chưa bao gổm 10% thuế VAT </div >
-                            </div >
-                            <div class = " content-content " >
-                                <div  class = " product " >
-                                    <h4 > GÀ PARMAGIANA </h4 >
-                                    <div  class = " product-image " >
-                                        <img  src = " img / menu / alfhcm-gà-parma.png " >
-                                    </div >
-                                    <p  class = " product-desc " > 2 miếng chiên gà rán chiên giòn Neapolitan & amp; phô mai nướng. Use khoai tây chiên & amp; salad </p >
-                                    <p  class = " price " > <span > 260.000đ </span > </p >
-                                </div >
-                                <div class = " product " >
-                                    <h4 > MEXICAN FAJITAS </h4 >
-                                    <div  class = " product-image " >
-                                        <img  src = " img / menu / alfhcm-steak-fajitas.png " >
-                                    </div >
-                                    <p  class = " product-desc " > Món cuốn Mêhicô với thịt gà hoặc thịt bò cay tẩm ướp nướng, hành tây, ớt chuống và các loại xốt Mêhicô phục vụ trên đĩa nóng </p >
-                                    <p  class = " price " > <span > 285.000đ </span > </p >
-                                </div >
-                            </div >  
-                         </div >
-                         <div  class = " module " >
-                            <div  class = " content-title " >
-                                <h3 > LỰA CHỌN NƯỚNG BBQ </h3 >
-                            </div >
-                            <div  class = " sub-title " >
-                                <div  class =" sub " > AL" S DANH THỊT sườn <BR > Select Xót Hickory or Xót sốt BBQ </div >
-                                <div  class = " sub " > Giá trên chưa bao gổm 10% thuế VAT </div >
-                            </div >
-                            <div  class = " content-content " >
-                                <div  class = " product " >
-                                    <h4 > PYGMY GROUP </h4 >
-                                    <div  class = " product-image " >
-                                        <img  src = " img / menu / alfhcm-pygmy-rib-6.png " >
-                                    </div >
-                                    <p  class = " product-desc " > 6 bánh nhỏ nướng dùng kèm salad & amp; khoai tây chiên chiên. </p >
-                                    <p  class = " price " > <span > 295.000đ </span > </p >
-                                </div >
-                                <div  class = " product " >
-                                    <h4 > PYGMY PLATTER </h4 >
-                                    <div  class = " product-image " >
-                                        <img  src = " img / menu / alfhcm-Pygmy-Rib-10.png " >
-                                    </div >
-                                    <p  class = " product-desc " > 10 mảnh nhỏ dùng kèm với salad & amp; khoai tây chiên </p >
-                                    <p  class = " price " ><span > 395.000đ </span ></p >
-                                </div >
-                            </div >  
-                         </div >
-                         <div  class = " module " >
-                            <div  class = " content-title " >
-                                <h3 > STEAK </h3 >
-                            </div >
-                            <div  class = " sub-title " >
-                                <div  class = " sub " > Thịt bồ kết hoặc New Zealand chất lượng hàng hóa, dinh dưỡng cao </div >
-                                <Div  class = " sub " > Thân bò ngoại New Zealand nướng: <BR > - Lựa chọn khoai tây: <BR > Khoai Tây bồ câu chien / Khoai Tây Chiên TYPE MỸ / khoai tây nghiền <BR > - Lựa chọn xà lách: <BR > -SALAD bEP TRƯỞNG / SALAD CAESAR / RAU CỦ Nương <BR > - Lựa chọn xót: <BR > - xót KEM HẠT TIÊU / xót TIÊU / xót Nam </div >
-                                <div  class = " sub " > Giá trên chưa bao gổm 10% thuế VAT </div >
-                            </div >
-                            <div  class = " content-content " >
-                                <div  class = " product " >
-                                    <h4 > AUSIE CHEFS STEAK </h4 >
-                                    <div  class = " product-image " >
-                                        <img  src = " img / menu / alfhcm-aussie-chef-steak.png " >
-                                    </div >
-                                    <p  class = " product-desc " > 150gr bít tết bò nhập khẩu dùng kèm nước sốt </p >
-                                    <p  class = " price " > <span > 295.000đ</span > </p >
-                                </div >
-                                <div  class = " product " >
-                                    <h4 > NZ SIZZLING STEAK 250GR </h4 >
-                                    <div  class = " product-image " >
-                                        <img  src = " img / menu / alfhcm-sizzling-steak.png " >
-                                    </div >
-                                    <p  class = " product-desc " > Thân bò NEW Zealand Nướng mềm trên đĩa nóng với hành tây & amp; the, the select the item used and xotor theo sở thích </p >
-                                    <p  class = " price " > <span > 495.000đ </span > </p >
-                                </div >
-                            </div >  
-                         </div >
-                         <div  class = " module " >
-                            <div  class = " content-title " >
-                                <h3 > BURGERS </h3 >
-                            </div >
-                            <div  class = " sub-title " >
-                                <div  class = " sub " > Tất cả bánh mì kẹp thịt dùng kèm phô mai Cheddar, salad, cà chua, củ hành tây, khoai tây chiên & amp; hành trình chiên. </ div >
-                                <div  class = " sub " > Đế bánh Pizza tươi as multiple loại nhân Custom: <BR > - Đế dày <BR > - Đế mỏng </div >
-                                <div  class = " sub " > Pizza cỡ L & amp; XL from # 1-6 áp dụng cho khuyến mãi thứ 3 và thứ 6 hàng tuần. </div >
-                                <div  class = " sub " > Giá trên chưa bao gổm 10% thuế VAT </div >
-                            </div >
-                            <div  class = " content-content " >
-                                <div  class = " product " >
-                                    <h4 > CHEESE BURGER </h4 >
-                                    <div  class = " product-image " >
-                                        <img  src = " img / menu / alfhcm-Cheese-Burger.png " >
-                                    </div >
-                                    <p  class = " product-desc " > Burger kẹp thịt bò Úc xay hoặc ức gà phi, phủ phô mai Cheddar, salad, hành tây và cà chua. </p >
-                                    <p  class = " price " > <span > 190.000đ </span > </p >
-                                </div >
-                                <div  class = " product " >
-                                    <h4 > AUSSIE BURGER </h4 >
-                                    <div  class = " product-image " >
-                                        <img  src = " img / menu / alfhcm-aussie-burger.png " >
-                                    </div >
-                                    <p  class = " product-desc " > Burger với thịt bò Úc xay, phủ với phô mai Cheddar, thịt bà chỉ xông khói, trứng, cà chua, salad, củ dền và hành tây xào. </p >
-                                    <p  class = " price " > <span > 220.000đ </span > </p >
-                                </div >
-                            </div > 
-                         </div >
-                         <div  class = " module " >
-                            <div  class = " content-title " >
-                                <h3 > PIZZA </h3 >
-                            </div >
-                            <div  class = " sub-title " >
-                                <Div  class = " sub " > size nhỏ (S) & nbsp; & nbsp; & nbsp; & nbsp; & nbsp; & nbsp; size lớn (L) & nbsp; & nbsp; & nbsp; & nbsp; & nbsp; & nbsp; size đại (XL) <BR > 6 miếng & nbsp; & nbsp; & nbsp; & nbsp; & nbsp; & nbsp; & nbsp; & nbsp; & nbsp; & nbsp; & nbsp; 8 miếng & nbsp; & nbsp; & nbsp; & nbsp; & nbsp; & nbsp; & nbsp; & nbsp; & nbsp; 10 miếng </ div >
-                                <div  class = " sub " > Giá trên chưa bao gổm 10% thuế VAT </div >
-                            </div >
-                            <div  class = " content-content " >
-                                <div  class = " product " >
-                                    <h4 > # 1 MARGHERITA </h4 >
-                                    <div  class = " product-image " >
-                                        <img  src = " img / menu / alfhcm-pizza-1.png " >
-                                    </div >
-                                    <p  class = " product-desc " > Pizza với sốt cà chua & amp; phô mai. < p >
-                                    <p  class = " price " > <span > (S) 145.000đ </span > <span > (L) 215.000đ </span > <span > (XL) 260.000đ </span > </p >
-                                </div >
-                                <div  class = " product " >
-                                    <h4 > # 2 HANAIIAN </h4 >
-                                    <div  class = " product-image " >
-                                        <img  src = " img / menu / alfhcm-pizza-2.png " >
-                                    </div >
-                                    <p class = " product-desc " > Sốt cà chua, jămbông, thơm & amp; phô mai </p >
-                                    <p class = " price " ><span > (S) 145.000đ </span > <span > (L) 215.000đ </span > <span > (XL) 260.000đ </span > </p >
-                                </div >
-                            </div >  
-                         </div >                                                      
-                    </div >
-                    <div  id = " drink-wine " >
-                        <div  class = " content-title " >
-                            <h3 > UỐNG NGON </h3 >
-                        </div >
-                        <div  class = " sub-title " >                           
-                            <div  class = " sub " > Giá trên chưa bao gổm 10% thuế VAT </div >
-                        </div >
-                        <div  class = " content-content " >
-                            <div  class = " product " >
-                                <h4 > NƯỚC HOA TƯƠI </h4 >
-                                < div  class = " product-image " >
-                                    <img  src = " img / menu / alfhcm-fresh-juice.png " >
-                                </div >
-                                <p  class = " product-desc " > Chanh, Xoài, Chanh dây, Cam, Dưa củ, Dâu </p >
-                                <p  class = " price " ><span > 60.000đ </span ></p >
-                            </div >
-                            <div  class = " product " >
-                                <h4 > JUICE </h4 >
-                                <div  class = " product-image " >
-                                    <img  src = " img / menu / alfhcm-jucie.png " >
-                                </div >
-                                <p  class = " product-desc " > Nho, Thơm, Táo </p >
-                                <p  class = " price " > < span > 60.000đ </span ></p >
-                            </div >
-                        </div > 
-                    </div >
-                </div >
-            </div >
-            <div  id = " toTop " >
-                <Một  href = " menu.html " > <img  src =" img / menu / back-to-top.png " alt ="" > </một >
-            </div >
-        </ phần >
-    </ phần >
-    < section  id = footer >
-        < div  class = " footer-left " >
-< ul >
-    < li  style = " color: white; text-align: center; " class = " item " > @ The Al Fresco's Group 2019 & ensp; </ li >
-    < Li  class = " item " > <một lớp="icon_face"href="#"><i lớp="fa fa-youtube-play"></i></một></li > 
-    < Li  class = " item " > <một lớp="icon_youtube"href="#"><i lớp=" fa fa-facebook"></i></một></li >
-    < Li  class = " item " > <một lớp="icon_app"href="#"><i lớp=" fa fa-archive"></i></một></li>
-</ ul >
-        </ div >
-        < div  class = " footer-right " >
-< ul >
-    <Li >  <một href="#"> Sơ đồ trang web</một></li>
-    <Li >  <một href="#"> Nhượng quyền </một></li>
-    <Li >  <một href="#"> Chính sách bảo mật</một></li>
-    <Li >  <một href="#"> Điều kiện to use</một></li>
-    <Li >  <một href="#"> Trụ sở chính</một></li>
-</ul >
-        </div >
-    </phần >    
-</body >
-</html >
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="vendor/css/all.css">
+</head>
+<body>
+   <div id="header">
+    <div class="logo">
+        <img src="img/header/logo.png" alt="">
+    </div>
+    <div class="header_top">
+        <div id="lienket">
+            <div class="login">
+                <a href="#">Đăng nhập / Đăng ký</a> 
+            </div>
+            <div class="timkiem">
+                <input class="textbox" type="text" name="" value="Search">
+                <div class="button"><img src="img/header/searchbtn.png" alt=""></div>
+            </div>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Đặt hàng online</a></li>
+                <li><a href="#" class="active">Menu</a></li>
+                <li><a href="#">Khuyến mãi</a></li>
+                <li><a href="#" >Giới thiệu</a></li>
+                <li><a href="#">Liên hệ</a></li>
+                <li><a href="#">Tuyển dụng</a></li>
+                <li><a href="#"><img src="img/header/cart.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div id="co">
+            <img src="img/header/vi.png" alt="">
+            <img src="img/header/uk.png" alt="">
+            <img src="img/header/kor.png" alt="">
+            <img src="img/header/ja.png" alt="">
+        </div>
+    </div>
+   </div>
+   <section id="main">
+       <div id="body_content">
+        <div class="col-left">
+            <h2 class="title-menu">menus</h2>
+            <nav id="top-menu">
+                <ul>
+                    <li>
+                        <a href="#">thực đơn khai vị</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">thực đơn chính</a>
+                    </li>
+                    <li>
+                        <a href="#">thực đơn tráng miệng</a>
+                    </li>
+                    <li>
+                        <a href="#">thức uống &amp,rượu</a>
+                    </li>
+                    </ul>
+              </nav>
+        </div>
+        <div class="col-right">
+            <div id="main-menu">
+                  <div class="module" style="padding-left: 10px;">
+                      <div class="main-title">
+                          <h3>THỰC ĐƠN ÁP DỤNG CHO CÁC NHÀ HÀNG</h3>
+                      </div>
+                  </div>
+                  <div class="module">
+                      <div class="content-title">
+                          <h3>Starter</h3>
+                      </div>
+                      <div class="sub-title">
+                        <div class="sub">Giá trên chưa bao gồm 10% thuế VAT</div>
+                    </div>
+                    <div class="content-content">
+                        <div class="product">
+                            <h4>SOUP OF THE DAY</h4>
+                            <div class="product-image">
+                                <img src="img/menu/alfhcm-soup-of-the-day.png">
+                            </div>
+                            <p class="product-desc">Xin hỏi nhân viên phục vụ về món súp đặc biệt trong ngày.
+                            </p>
+                            <p class="price"><span>90.000đ</span></p>
+
+                        </div>
+                        <div class="product">
+                            <h4>GARLIC CHEESE LOAF</h4>
+                            <div class="product-image">
+                                <img src="img/menu/alfhcm-Cheese-Garlic-Bread.png">
+                            </div>
+                            <p class="product-desc">Bánh mỳ bơ tỏi nhòi phô mai nướng.</p>
+                            <p class="price"><span>90.000đ</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="main-menu">
+                  <div class="module" style="padding-left: 10px;">
+                  </div>
+                  <div class="module">
+                      <div class="content-title">
+                          <h3>AL'S FRIED RICE</h3>
+                      </div>
+                      <div class="sub-title">
+                          <div class="sub">Giá trên chưa bao gồm 10% thuế VAT</div>
+                      </div>
+                      <div class="content-content">
+                          <div class="product">
+                              <h4>COMBINATION FRIED RICE</h4>
+                              <div class="product-image">
+                                  <img src="img/menu/alfhcm-combination-fried-rice.png">
+                              </div>
+                              <p class="product-desc">Cơm chiên tổng hợp gồm thịt bò, thịt gà, mực, jămbông và rau củ.
+                              </p>
+                              <p class="price"><span>155.000đ</span></p>
+                          </div>
+                          <div class="product">
+                              <h4>SEAFOOD FRIED RICE</h4>
+                              <div class="product-image">
+                                  <img src="img/menu/alfhcm-seafood-fried-rice.png">
+                              </div>
+                              <p class="product-desc">Cơm chiên hải sản và rau củ.</p>
+                              <p class="price"><span>150.000đ</span></p>
+
+                          </div>
+                          <div class="product"></div>
+                          <div class="sub">Giá trên chưa bao gồm 10% thuế VAT</div>
+                      </div>
+                      <div class="content-content">
+                          <div class="product">
+                              <h4>SOUP OF THE DAY</h4>
+                              <div class="product-image">
+                                  <img src="img/menu/alfhcm-soup-of-the-day.png">
+                              </div>
+                              <p class="product-desc">Xin hỏi nhân viên phục vụ về món súp đặc biệt trong ngày.
+                              </p>
+                              <p class="price"><span>90.000đ</span></p>
+
+                          </div>
+                          <div class="product">
+                              <h4>GARLIC CHEESE LOAF</h4>
+                              <div class="product-image">
+                                  <img src="img/menu/alfhcm-Cheese-Garlic-Bread.png">
+                              </div>
+                              <p class="product-desc">Bánh mỳ bơ tỏi nhòi phô mai nướng.</p>
+                              <p class="price"><span>90.000đ</span></p>
+                          </div>
+                      </div>
+                  </div>
+                  <div id="main-menu">
+                    <div class="module" style="padding-left: 10px;">
+                    </div>
+                    <div class="module">
+                        <div class="content-title">
+                            <h3>AL'S FRIED RICE</h3>
+                        </div>
+                        <div class="sub-title">
+                            <div class="sub">Giá trên chưa bao gồm 10% thuế VAT</div>
+                        </div>
+                        <div class="content-content">
+                            <div class="product">
+                                <h4>COMBINATION FRIED RICE</h4>
+                                <div class="product-image">
+                                    <img src="img/menu/alfhcm-combination-fried-rice.png">
+                                </div>
+                                <p class="product-desc">Cơm chiên tổng hợp gồm thịt bò, thịt gà, mực, jămbông và rau củ.
+                                </p>
+                                <p class="price"><span>155.000đ</span></p>
+                            </div>
+                            <div class="product">
+                                <h4>SEAFOOD FRIED RICE</h4>
+                                <div class="product-image">
+                                    <img src="img/menu/alfhcm-seafood-fried-rice.png">
+                                </div>
+                                <p class="product-desc">Cơm chiên hải sản và rau củ.</p>
+                                <p class="price"><span>150.000đ</span></p>
+
+                            </div>
+                            <div class="product"></div>
+                            <div class="product"></div>
+                        </div>
+                    </div>
+                    <div class="module">
+                        <div class="content-title">
+                            <h3>IMPORTED STEAK</h3>
+                        </div>
+                        <div class="sub-title">
+                            <div class="sub">Thịt bò Úc hoặc New Zealand chất lượng hảo hạng, dinh dưỡng cao.</div>
+                            <div class="sub">Thân bò ngoại New Zealand nướng: <br>
+                            -Lựa chọn khoai tây: <br>
+                            KHOAI TÂY BỒ CAU CHIÊN/KHOAI TÂY CHIÊN KIỂU MỸ/KHOAI TÂY NGHIỀN <br>
+                            -Lựa chọn salát: <br>
+                            SALÁT BẾP TRƯỞNG/ SALÁT CAESAR/ RAU CỦ NƯỚNG <br>
+                            -Lựa chọn xốt: <br>
+                            XỐT KEM HẠT TIÊU/XỐT TIÊU/XỐT NẮM
+                            </div>
+                            <div class="sub">Giá trên chưa bao gồm 10% thuế VAT</div>
+                        </div>
+                        <div class="content-content" >
+                            <div class="product">
+                                <h4>AUSSUE CHEFS STEAK</h4>
+                                <div class="product-image">
+                                    <img style="width: 300px; height: 200px;" src="img/menu/alfhcm-aussie-chefs-steak.png">
+                                </div>
+                                <p class="product-desc">150gr bít tết bò nhập khẩu dùng kèm sốt gravy.
+                                </p>
+                                <p class="price"><span>295.000đ</span></p>
+                            </div>
+                            <div class="product">
+                                <h4>NZ SIZZLING STEAK 250GR</h4>
+                                <div class="product-image">
+                                    <img style="height:200px;" src="img/menu/alfhcm-sizzling-steak.png">
+                                </div>
+                                <p class="product-desc">Thân bò New Zealand nướng mềm trên
+                                    đĩa nóng với hành tây & nấm, lựa chọn mon dung kèm và xốt theo sở thích </p>
+                                <p class="price"><span>495.000đ</span></p>
+                            </div>
+                            <div class="product"></div>
+                            <div class="product"></div>
+                        </div>
+                    </div>
+                    <div class="module">
+                        <div class="content-title">
+                            <h3>Tasty drink</h3>
+                        </div>
+                        <div class="sub-title">
+                            <div class="sub">Giá trên chưa bao gồm 10% thuế VAT</div>
+                        </div>
+                        <div class="content-content">
+                            <div class="product">
+                                <h4>Fresh Juice</h4>
+                                <div class="product-image">
+                                    <img src="img/menu/alfhcm-fresh-juice.png">
+                                </div>
+                                <p class="product-desc">Chanh, Xoài, Chanh dây, Cam, Dưa hấu, Dâu
+                                </p>
+                                <p class="price"><span>60.000đ</span></p>
+                            </div>
+                            <div class="product">
+                                <h4>JUICE</h4>
+                                <div class="product-image">
+                                    <img src="img/menu/alfhcm-jucie.png">
+                                </div>
+                                <p class="product-desc">Nho, Thơm, Táo</p>
+                                <p class="price"><span>60.000đ</span></p>
+                            </div>
+                        </div>
+                        <div id="toTop"></div>
+                    </div>
+        </div>   
+       </div>
+   </section>
+   <section id="footer">
+       <div class="left-footer">
+            <ul>
+                <li class="item">@ The Al Fresco's Group 2019</li>
+                <li class="item"><a class="icon_face" href="#"><i class="fab fa-facebook"></i></a></li>
+                <li class="item"><a class="icon_youtube" href="#"><i class="fab fa-youtube-square"></i></a></li>
+                <li class="item"><a class="icon_app" href="#"><i class="fab fa-app-store"></i></a></li>
+            </ul>
+       </div>
+       <div class="right-footer">
+            <ul>
+                <li><a href="#">Sơ đồ Site</a></li>
+                <li><a href="#">Nhượng quyền</a></li>
+                <li><a href="#"></a>Chính sách bảo mật</li>
+                <li><a href="#"></a>Điều kiện sử dụng</li>
+                <li><a href="#"></a>Head office</li>
+            </ul>
+       </div>
+   </section>
+</body>
+</html>
